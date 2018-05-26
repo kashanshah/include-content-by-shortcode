@@ -9,11 +9,11 @@ Stable tag: 0.0.9.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin allows to add single content in multiple posts and pages by a shortcode. It is used to fulfill the concept of PHP\'s \'include\' function.
+This plugin allows to add single content in multiple posts and pages by a shortcode. It is used to fulfill the concept of PHP's 'include' function.
 
 == Description ==
-This plugin allows the user to add single content in multiple posts and pages by means of a shortcode. It is used to fulfill the concept of PHP\'s \'include\' function. 
-For example, my brand\'s tagline, \"The Best Of Its Kind\" set to be used on various pages and posts, I would add that in Included Content and it will generate a shortcode against this content. This generated shortcode will now be placed everywhere I want to add my tagline. 
+This plugin allows the user to add single content in multiple posts and pages by means of a shortcode. It is used to fulfill the concept of PHP's 'include' function. 
+For example, my brand's tagline, "The Best Of Its Kind" set to be used on various pages and posts, I would add that in Included Content and it will generate a shortcode against this content. This generated shortcode will now be placed everywhere I want to add my tagline. 
  Now in future, if I would change my tagline, I would need to change it only in Included Content and it will change it everywhere the shortcode was used.
 
 == Installation ==
