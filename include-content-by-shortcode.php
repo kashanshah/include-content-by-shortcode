@@ -2,9 +2,9 @@
 /*
 Plugin Name: Include Content By Shortcode
 Plugin URI: http://kashanshah.ga
-Description: This plugin allows the user to add single content in multiple posts and pages by means of a shortcode. It is used to fulfill the concept of PHP's 'include' function.
+Description: This plugin allows to add single content in multiple posts and pages by a shortcode. It is used to fulfill the concept of PHP's 'include' function.
 Author: Kashan Shah
-Version: 0.0.9
+Version: 0.0.9.3
 Author URI: http://www.kashanshah.ga
 */
 
