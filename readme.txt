@@ -5,7 +5,7 @@ Donate link: https://kashanshah.ga
 Requires at least: 4.0.1
 Tested up to: 4.9.6
 Requires PHP: 5.2.4
-Stable tag: 0.0.9.3
+Stable tag: 0.0.9.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,8 +27,11 @@ For example, my brand's tagline, "The Best Of Its Kind" set to be used on variou
 3. The included content will appear where the shortcode would be pasted
 
 == Changelog ==
-0.0.9
-First Release
+0.0.9.5
+File-wise coded structure. Meta boxes for CSS and JS added.
 
 0.0.9.3
 Updated readme files including installation instructions and screenshots.
+
+0.0.9
+First Release
