@@ -11,7 +11,7 @@ Tested up to: 4.9.6
 
 Requires PHP: 5.2.4
 
-Stable tag: 0.0.9.5
+Stable tag: 0.0.9.6
 
 License: GPLv2 or later
 
@@ -34,11 +34,14 @@ For example, my brand\'s tagline, \"The Best Of Its Kind\" set to be used on var
 3. The included content will appear where the shortcode would be pasted
 
 ## Changelog
-###0.0.9.5
+### 0.0.9.6
 File-wise coded structure. Meta boxes for CSS and JS added.
 
-###0.0.9.3
+### 0.0.9.3
 Updated readme files including installation instructions and screenshots.
 
-####0.0.9
+#### 0.0.9
 First Release
+
+## Upgrade Notice
+Meta boxes added for custom CSS and JS
