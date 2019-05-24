@@ -12,7 +12,7 @@ add_action( 'manage_icbscbks_posts_custom_column' , 'icbscbks_custom_icbscbks_co
 function icbscbks_custom_icbscbks_column( $column, $post_id ) {
     switch ( $column ) {
         case 'Shortcode' :
-            echo '<span class="icbscbks_shortcode"><input style="background: inherit;color: inherit;font-size: 16px;width:100%;padding: 4px 8px;margin: 0;" type="text" value="[includedcontentbyshortcode id='.$post_id.']" readonly onfocus="this.select();" /></span>';
+            echo '<span class="icbscbks_shortcode"><input style="background: inherit;color: inherit;font-size: 16px;width:100%;padding: 4px 8px;margin: 0;" type="text" value="[includedcontentbyshortcode slug='.get_post_field( 'post_name', $post_id ).']" readonly onfocus="this.select();" /></span>';
             break;
     }
 }

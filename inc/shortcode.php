@@ -5,8 +5,10 @@ add_shortcode( 'includedcontentbyshortcode', 'icbscbks_func' );
 // Reading Shortcode From Content
 function icbscbks_func( $atts ) {
     $icbscbks_scAttr = shortcode_atts( array(
-        'slug' => 'something',
+        'slug' => '',
         'id' => '',
+        'css' => 'true',
+        'js' => 'true',
     ), $atts );
     
     // [icbscbks id=123]
@@ -15,8 +17,22 @@ function icbscbks_func( $atts ) {
         if($icbscbks_post->post_type == 'icbscbks'){
             $icbscbks_postcontent = $icbscbks_post->post_content;
             $icbscbks_postcontent = apply_filters('the_content', $icbscbks_postcontent);
+            if($icbscbks_scAttr['css'] != 'false'){
+                if(get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_css', true) != ''){
+                    $icbscbks_postcontent .= '
+<style>'.get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_css', true).'</style>
+';
+                }
+            }
+            if($icbscbks_scAttr['js'] != 'false'){
+                if(get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_js', true) != ''){
+                    $icbscbks_postcontent .= '
+<script type="text/javascript">'.get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_js', true).'</script>
+';
+                }
+            }
         }else{
-            $icbscbks_postcontent = '';
+            $icbscbks_postcontent = '<!-- Incorrect id --> ';
         }
     }
     // [icbscbks slug=included-content-one]
@@ -25,8 +41,22 @@ function icbscbks_func( $atts ) {
         if($icbscbks_post->post_type == 'icbscbks'){
             $icbscbks_postcontent = $icbscbks_post->post_content;
             $icbscbks_postcontent = apply_filters('the_content', $icbscbks_postcontent);
+            if($icbscbks_scAttr['css'] != 'false'){
+                if(get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_css', true) != ''){
+                    $icbscbks_postcontent .= '
+<style>'.get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_css', true).'</style>
+';
+                }
+            }
+            if($icbscbks_scAttr['js'] != 'false'){
+                if(get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_js', true) != ''){
+                    $icbscbks_postcontent .= '
+<script type="text/javascript">'.get_post_meta($icbscbks_post->ID, '_key_icbscbks_mb_js', true).'</script>
+';
+                }
+            }
         }else{
-            $icbscbks_postcontent = '';
+            $icbscbks_postcontent = '<!-- Incorrect slug --> ';
         }
 }
     else{
@@ -35,4 +65,8 @@ function icbscbks_func( $atts ) {
 
     return $icbscbks_postcontent;
 }
+
+
+
+
 
